@@ -1,5 +1,4 @@
---owner AkaHood.cc
---Main
+
 if getgenv().Aiming then return getgenv().Aiming end
 
 -- // Services
