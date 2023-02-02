@@ -7,7 +7,7 @@ local GuiService = game:GetService("GuiService")
 local RunService = game:GetService("RunService")
 
 -- // Vars
-local Heartbeat = RunService.Heartbeat  
+local Heartbeat = RunService.Heartbeat
 local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local Mouse = LocalPlayer:GetMouse()
@@ -37,10 +37,10 @@ local tableinsert = table.insert
 getgenv().Aiming = {
     Enabled = true,
 
-    ShowFOV = true,
-    FOV = 25,
-    FOVSides  = 55,
-    FOVColour = Color3fromRGB(76, 17, 80),
+    ShowFOV = false,
+    FOV = 15.5,
+    FOVSides = 25,
+    FOVColour = Color3fromRGB(98, 45, 142),
 
     VisibleCheck = true,
     
@@ -68,8 +68,8 @@ local Aiming = getgenv().Aiming
 
 -- // Create circle
 local circle = Drawingnew("Circle")
-circle.Transparency = 1
-circle.Thickness = 3
+circle.Transparency = 0.4
+circle.Thickness = 0.8
 circle.Color = Aiming.FOVColour
 circle.Filled = false
 Aiming.FOVCircle = circle
@@ -436,3 +436,5 @@ end)
 
 -- //
 return Aiming
+
+-- // If you want the examples, look at the docs.
