@@ -1,5 +1,5 @@
---owner farzad he use ugly ass slient lol
---sucks farzad
+--owner AkaHood.cc
+--Main
 if getgenv().Aiming then return getgenv().Aiming end
 
 -- // Services
