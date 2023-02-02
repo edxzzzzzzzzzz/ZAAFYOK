@@ -7,7 +7,7 @@ local GuiService = game:GetService("GuiService")
 local RunService = game:GetService("RunService")
 
 -- // Vars
-local Heartbeat = RunService.Heartbeat  
+local Heartbeat = RunService.Heartbeat
 local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local Mouse = LocalPlayer:GetMouse()
@@ -39,8 +39,8 @@ getgenv().Aiming = {
 
     ShowFOV = true,
     FOV = 119,
-    FOVSides = 16,
-    FOVColour = Color3fromRGB(255, 255, 255),
+    FOVSides = 14,
+    FOVColour = Color3fromRGB(144, 238, 144),
 
     VisibleCheck = true,
     
