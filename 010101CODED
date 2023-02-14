@@ -1,5 +1,3 @@
---owner farzad he use ugly ass slient lol
---sucks farzad
 if getgenv().Aiming then return getgenv().Aiming end
 
 -- // Services
@@ -9,7 +7,7 @@ local GuiService = game:GetService("GuiService")
 local RunService = game:GetService("RunService")
 
 -- // Vars
-local Heartbeat = RunService.Heartbeat
+local Heartbeat = RunService.Heartbeat  
 local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local Mouse = LocalPlayer:GetMouse()
@@ -39,19 +37,19 @@ local tableinsert = table.insert
 getgenv().Aiming = {
     Enabled = true,
 
-    ShowFOV = true,
-    FOV = 20,  --Fov u can change.
-    FOVSides = 300, -FOVSides u can change.
-    FOVColour = Color3fromRGB(98, 37, 209),  --fov colour u can change.
+    ShowFOV = false,
+    FOV = 119,
+    FOVSides = 16,
+    FOVColour = Color3fromRGB(255, 255, 255),
 
-    VisibleCheck = true, --u can change.
+    VisibleCheck = true,
     
-    HitChance = 100, --u can change
+    HitChance = 100,
 
-    Selected = nil,  --idk
-    SelectedPart = nil,  --idk
+    Selected = nil,
+    SelectedPart = nil,
 
-    TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso"},
+    TargetPart = {"Head", "HumanoidRootPart"},
 
     Ignored = {
         Teams = {
